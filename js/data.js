@@ -34,8 +34,8 @@ window.PORTFOLIO = {
       blog: ""
     },
     intro: [
-      "2024년 2월 MRC 기술연구소에 입사했습니다. 첫 업무는 INS 형식승인 시험에 쓸 항법 센서 시뮬레이터였습니다. 20종 장비의 NMEA 문장을 만들어 내보내는 C# 프로그램을 3개월 동안 혼자 개발했고, 지금도 사내 표준 시험 도구로 쓰이고 있습니다.",
-      "이어서 경보관리장치 CAM을 두 명이 개발해 DNV 형식승인을 받았고, HD한국조선해양 스마트포털의 전 지구 기상 화면을 설계하고 개발했습니다. 2026년에는 IACS UR E26/E27에 대응하는 선박용 NMS를 혼자 만들었고, ASTERIX CAT240 레이더 영상 코덱을 개발해 실제 선박에 설치했습니다.",
+      "2024년 2월 MRC 기술연구소에 입사했습니다. 첫 업무는 INS 형식승인 시험에 쓸 항법 센서 시뮬레이터였습니다. 20종 장비의 NMEA 문장을 만들어 내보내는 C# 프로그램을 3개월 동안 개발했고, 지금도 사내 표준 시험 도구로 쓰이고 있습니다.",
+      "이어서 경보관리장치 CAM을 개발해 DNV 형식승인을 받았고, HD한국조선해양 스마트포털의 전 지구 기상 화면을 설계하고 개발했습니다. 2026년에는 IACS UR E26/E27에 대응하는 선박용 NMS를 개발했고, ASTERIX CAT240 레이더 영상 코덱을 개발해 실제 선박에 설치했습니다.",
       "지금은 보안 게이트웨이의 DNV 사이버보안 인증 문서와 전기추진 차도선 원격 모니터링 Web UI를 진행하고 있습니다."
     ],
     strengths: [
@@ -78,10 +78,10 @@ window.PORTFOLIO = {
       period: "2024.02 — 현재",
       summary: "선박 항법장비(INS, ECDIS, RADAR, CAM)를 만드는 회사입니다. 2025년 한 해는 기술연구소가 세운 자회사 (주)오션웨이즈로 전출되어 같은 업무를 했고, 2026년 1월 엠알씨로 복귀했습니다.",
       bullets: [
-        "항법 센서 20종을 흉내 내는 INS 시뮬레이터를 혼자 개발했습니다. DNV INS 형식승인 시험의 입력원으로 쓰였습니다.",
-        "경보관리장치 CAM을 두 명이 개발해 단독형과 INS 연동형 두 구성으로 DNV 형식승인을 받았습니다.",
+        "항법 센서 20종을 흉내 내는 INS 시뮬레이터를 개발했습니다. DNV INS 형식승인 시험의 입력원으로 쓰였습니다.",
+        "경보관리장치 CAM을 개발해 단독형과 INS 연동형 두 구성으로 DNV 형식승인을 받았습니다.",
         "HD한국조선해양 스마트포털의 Lv.1 전 지구 기상 화면을 설계하고 개발했습니다.",
-        "IACS UR E26/E27에 대응하는 선박용 NMS를 혼자 개발했습니다. 장비 약 100대를 감시합니다.",
+        "IACS UR E26/E27에 대응하는 선박용 NMS를 개발했습니다. 장비 약 100대를 감시합니다.",
         "ASTERIX CAT240 레이더 영상 코덱과 변환기를 개발해 태화호에 설치했습니다.",
         "보안 게이트웨이의 DNV 사이버보안 형식승인에 제출할 문서 10종을 작성했습니다.",
         "전기추진 차도선 ESS 원격 모니터링의 육상 관제 Web UI 23화면을 맡고 있습니다 (HD한국조선해양)."
@@ -128,7 +128,7 @@ window.PORTFOLIO = {
       jd: "제품 Control S/W 개발",
       title: "규격 요구사항을 코드로 구현한 장비 제어·경보 소프트웨어로 선급 형식승인을 받았습니다",
       bridge: "선박 항법장비의 제어 소프트웨어와 파나시아 제품(Scrubber, BWTS, SCR)의 제어 소프트웨어는 구조가 같다고 봅니다. 센서와 접점 입력을 받아 상태를 판단하고 경보와 제어 신호를 내보내며, 선급 규격을 지켜야 합니다.",
-      facts: ["경보관리장치 CAM으로 DNV 형식승인 두 구성 취득", "IEC 62923 조항을 하나씩 대조해 불일치 41건 수정", "항법 센서 20종 시뮬레이터를 혼자 개발"],
+      facts: ["경보관리장치 CAM으로 DNV 형식승인 두 구성 취득", "IEC 62923 조항을 하나씩 대조해 불일치 41건 수정", "항법 센서 20종 시뮬레이터 개발"],
       projects: ["cam-dnv", "ins-simulator", "p180"]
     },
     {
@@ -155,11 +155,11 @@ window.PORTFOLIO = {
       featured: true,
       competency: "control",
       title: "INS 시뮬레이터 — 항법 센서 20종",
-      headline: "실물 센서 없이 형식승인 시험을 할 수 있도록, 항법 센서 20종을 흉내 내는 시뮬레이터를 3개월 만에 혼자 개발",
-      subtitle: "INS 형식승인 시험에 필요한 센서 입력을 대신 만들어 주는 Windows 프로그램입니다. 입사 후 첫 프로젝트로 3개월 동안 혼자 개발했고, 2026년에는 HD현대에 공급하기 위해 v2로 개선하고 있습니다.",
+      headline: "실물 센서 없이 형식승인 시험을 할 수 있도록, 항법 센서 20종을 흉내 내는 시뮬레이터를 3개월 만에 개발",
+      subtitle: "INS 형식승인 시험에 필요한 센서 입력을 대신 만들어 주는 Windows 프로그램입니다. 입사 후 첫 프로젝트로 3개월 동안 개발했고, 2026년에는 HD현대에 공급하기 위해 v2로 개선하고 있습니다.",
       org: "엠알씨 기술연구소 · 사내",
       period: "2024.02 — 2024.05 · v2 2026.11 —",
-      role: "1인 개발",
+      role: "개발",
       tags: ["C#", ".NET WinForms", "IEC 61162-1/450", "ITU-R M.1371", "멀티스레드"],
       thumbnail: "assets/images/ins-v2-gps.jpg",
       metrics: [
@@ -173,7 +173,7 @@ window.PORTFOLIO = {
           "그래서 실물 장비 없이 20종 센서의 NMEA 문장을 만들어 내보내는 시뮬레이터를 개발했습니다."
         ],
         myRole: [
-          "기획, 설계, 구현, 검증을 혼자 맡았습니다.",
+          "기획, 설계, 구현, 검증을 맡았습니다.",
           "장비 20종의 설정 화면, 장비별 생성 스레드, Serial과 UDP 전송 관리자를 만들었습니다.",
           "AIS 6bit 인코딩과 VDM/VDO 다중 문장 분할, NAVTEX NRX 문장 분할을 구현했습니다.",
           "IEC 61162-450 TAG block과 멀티캐스트, 전송 모니터, 설정 저장, 덤프 파일 재생 기능을 넣었습니다."
@@ -212,10 +212,10 @@ window.PORTFOLIO = {
       competency: "control",
       title: "경보관리장치 CAM — DNV 형식승인",
       headline: "IEC 62923 요구사항을 하나씩 구현해 경보관리장치를 개발하고, 단독형과 INS 연동형 두 구성으로 DNV 형식승인을 취득",
-      subtitle: "브리지 장비의 경보를 한곳에 모아 표시하고 확인과 소음 처리를 하는 CAM(IEC 62923-1/2)입니다. 두 명이 개발했고, 단독형과 INS 연동형 두 구성 모두 DNV 형식승인을 받았습니다.",
+      subtitle: "브리지 장비의 경보를 한곳에 모아 표시하고 확인과 소음 처리를 하는 CAM(IEC 62923-1/2)입니다. 단독형과 INS 연동형 두 구성 모두 DNV 형식승인을 받았습니다.",
       org: "엠알씨 기술연구소 · DNV · HD현대마린솔루션 HiINS",
       period: "2024.05 — 2024.12 · 유지보수 2025 —",
-      role: "2인 개발 · 두 구성의 인증 담당",
+      role: "개발 · 두 구성의 인증 담당",
       tags: ["C#", ".NET", "IEC 62923-1/2", "IEC 61162-450", "PostgreSQL"],
       thumbnail: "assets/images/cam-01.jpg",
       metrics: [
@@ -319,11 +319,11 @@ window.PORTFOLIO = {
       featured: true,
       competency: "security",
       title: "선박용 NMS — IACS UR E26/E27 대응",
-      headline: "IACS UR E26/E27 요구사항 68건을 기능으로 녹여 낸 선박용 NMS를 설계 1개월, 구현 2개월 만에 혼자 개발",
-      subtitle: "선내 네트워크 장비를 SNMP, Syslog, Trap으로 감시하는 자사 제품입니다. E26/E27 요구사항 68건을 기능으로 구현했고, 요구사항 정의부터 설계, 백엔드, 프론트엔드, 배포까지 혼자 진행했습니다. 육상관제 포털에도 내장됩니다.",
+      headline: "IACS UR E26/E27 요구사항 68건을 기능으로 녹여 낸 선박용 NMS를 설계 1개월, 구현 2개월 만에 개발",
+      subtitle: "선내 네트워크 장비를 SNMP, Syslog, Trap으로 감시하는 자사 제품입니다. E26/E27 요구사항 68건을 기능으로 구현했고, 요구사항 정의부터 설계, 백엔드, 프론트엔드, 배포까지 진행했습니다. 육상관제 포털에도 내장됩니다.",
       org: "엠알씨 · 자사 제품 · 육상관제 플랫폼 내장",
       period: "2025.12 — 2026.03 · 개선 2026.09 — 11",
-      role: "1인 개발",
+      role: "개발",
       tags: ["Java 17", "Spring Boot", "SNMP4J", "Vue 3", "PostgreSQL", "Docker"],
       thumbnail: "assets/images/nms-dashboard.jpg",
       metrics: [
@@ -377,7 +377,7 @@ window.PORTFOLIO = {
       subtitle: "EUROCONTROL ASTERIX CAT240 인코더·디코더 DLL과, Navico 레이더 스포크를 CAT240 UDP 멀티캐스트로 바꿔 주는 Navico2Cat240(Windows, Linux)입니다. 자사 RADAR와 ECDIS에 DLL을 탑재했고 태화호에 설치했습니다.",
       org: "엠알씨 · HD한국조선해양 스마트포털 2차년도",
       period: "2026.04 — 2026.07 · 설치 2026.09 · 확장 2026.10",
-      role: "1인 개발",
+      role: "개발",
       tags: ["C#", ".NET 10 Avalonia", "ASTERIX CAT240", "Navico Radar SDK", "C++", "UDP 멀티캐스트"],
       thumbnail: "assets/images/asterix-radar-cat240.jpg",
       metrics: [
@@ -428,7 +428,7 @@ window.PORTFOLIO = {
       subtitle: "자사 게이트웨이 MCG-100의 DNV Cyber Secure(SP1) 요구 49항목을 분석하고 시험해 문서화했습니다. 보안 기능 기술서, 하드닝 지침, 시험 절차, 선내 검증 절차 등 제출 문서 10종을 썼습니다.",
       org: "엠알씨 기술연구소 · DNV · 펌웨어 공급사 협업",
       period: "2026.09 — 진행 중",
-      role: "작성자 2인 중 1인 · Prepared Engineer",
+      role: "문서 작성 · Prepared Engineer",
       tags: ["IEC 62443-3-3 / 4-2", "DNV-RU-SHIP Pt.6 Ch.5", "IACS UR E27", "Wireshark · nmap · ZAP · hping3"],
       thumbnail: "assets/images/gateway-sp1-summary.jpg",
       metrics: [
