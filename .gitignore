@@ -1,0 +1,15 @@
+# GitHub Pages 저장소에 올리지 않는 것 (로컬 작업 파일)
+.netlify/
+build/
+node_modules/
+docs/_backup/
+docs/portfolio_template.pptx
+_*.js
+_*.ps1
+~$*
+README.md
+캡처 가이드.md
+netlify.toml
+.netlifyignore
+Thumbs.db
+desktop.ini

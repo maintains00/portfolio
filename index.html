@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>유지선 — 조선·해양 SW 개발자</title>
+  <meta name="description" content="조선·해양 SW 개발자 유지선 포트폴리오. 제품 Control S/W · Data 처리 · S/W 보안 설계 — 공고 세 줄에 맞춘 프로젝트와 입사 후 90일 제안.">
+  <script>
+    (function () { try { var q = new URLSearchParams(location.search).get("theme"); var t = q || localStorage.getItem("theme"); if (t === "night" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) document.documentElement.setAttribute("data-theme", "night"); } catch (e) {} })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="wrap bar">
+      <a href="#top" class="brand" id="brand"></a>
+      <nav>
+        <a href="#competencies">역량</a>
+        <a href="#works">프로젝트</a>
+        <a href="#plan">입사 후</a>
+        <a href="#certs">인증</a>
+        <a href="#skills">기술</a>
+        <a href="#experience">경력</a>
+        <a href="#fit">접점</a>
+        <a href="#contact">연락</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" title="ECDIS 처럼 DAY / NIGHT 를 전환합니다">DAY</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 히어로: 흰 바탕 카피, 아래에 직접 만든 Lv.1 지구본을 큰 라운드 블록으로 -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-tagline"></h1>
+          <p class="lead" id="hero-lead"></p>
+          <div class="who" id="hero-who"></div>
+          <div class="cta">
+            <a class="primary" href="#works">프로젝트 보기</a>
+            <a href="#plan">입사 후 90일 제안</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img class="hero-bg" src="assets/images/hero-globe-v2.jpg" alt="" width="2000" height="1129">
+          <div class="stream" id="stream" aria-hidden="true"></div>
+        </figure>
+        <p class="hero-cap">HD한국조선해양 스마트포털 Lv.1 Global Scale View (설계·개발 담당). 하단에 흐르는 문장은 NMEA 0183, 체크섬은 브라우저에서 실시간 계산.</p>
+      </div>
+    </section>
+
+    <!-- 한눈에: 벤토 그리드 -->
+    <section class="wrap section" id="glance">
+      <div class="bento">
+        <div class="tile t-years"><span class="k">경력</span><strong>2년 10개월</strong><span class="d">2024.02 — 현재 · 선박 항법장비 S/W</span></div>
+        <div class="tile t-cert"><span class="k">DNV 형식승인</span><strong>TAA00003HV</strong><span class="d">경보관리장치 CAM · STANDALONE·INS 연동</span></div>
+        <div class="tile t-img"><img src="assets/images/ship-03.jpg" alt="태화호 교육실 ECDIS 대형 화면" loading="lazy"><span class="cap">태화호 교육실 설치 (2025.07)</span></div>
+        <div class="tile t-std"><span class="k">다룬 규격</span><ul><li>IEC 61162-1 / 450</li><li>IEC 62923-1 / 2</li><li>ITU-R M.1371</li><li>ASTERIX CAT240</li><li>IACS UR E26 / E27</li><li>IEC 62443 · DNV Pt.6 Ch.5</li></ul></div>
+        <div class="tile t-sim"><span class="k">INS 시뮬레이터</span><strong>항법 센서 20종</strong><span class="d">단독 개발 · 형식승인 시험 입력원</span></div>
+        <div class="tile t-nms"><span class="k">선박용 NMS</span><strong>단독 개발 · 3개월</strong><span class="d">E26 17 + E27 51건 · 23화면 · 장비 100대</span></div>
+        <div class="tile t-radar"><img src="assets/images/asterix-radar-cat240.jpg" alt="자사 RADAR 화면" loading="lazy"><span class="cap">RADAR → ASTERIX CAT240, 초당 832 스포크</span></div>
+        <div class="tile t-doc"><span class="k">DNV 사이버보안</span><strong>제출 문서 10종</strong><span class="d">SP1 요구 49항목 · 심사 진행 중</span></div>
+      </div>
+    </section>
+
+    <!-- 목차: 공고 '주요 업무' 세 줄 ↔ 한 일. 이 세 개가 아래 프로젝트의 분류 기준 -->
+    <section class="wrap section" id="competencies">
+      <div class="section-head">
+        <h2>공고 세 줄, 한 일 세 가지</h2>
+        <p id="comp-note">파나시아 ES연구팀 SW 개발 담당 공고의 주요 업무를 한 줄씩 떼어 제 경험을 짝지었습니다. 아래 프로젝트는 이 세 가지로 분류했습니다.</p>
+      </div>
+      <ul class="comp" id="comp-list"></ul>
+    </section>
+
+    <section class="wrap section" id="works">
+      <div class="section-head">
+        <h2>프로젝트</h2>
+        <p>시간순. 제목은 한 일, 작은 글씨는 제품명과 공고 항목. 카드를 열면 개요 · 담당 업무 · 주요 작업 · 문제 해결 · 성과.</p>
+      </div>
+      <div class="cards" id="works-list"></div>
+    </section>
+
+    <!-- 입사 후 해볼 일: 공고 문장마다 하나씩, 화면 가안 포함 -->
+    <section class="section tint" id="plan">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="plan-title"></h2>
+          <p id="plan-note"></p>
+        </div>
+        <div class="plan" id="plan-list"></div>
+      </div>
+    </section>
+
+    <section class="section tint" id="certs">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>인증 · 교육</h2>
+          <p></p>
+        </div>
+        <div class="certs" id="certs-list"></div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="story">
+      <div class="section-head">
+        <h2>소개</h2>
+        <p></p>
+      </div>
+      <div class="story">
+        <div class="narrative" id="about-intro"></div>
+        <div class="photos">
+          <figure><div class="shot"><img src="assets/images/sp-lv1-currents.jpg" alt="Lv.1 조류 오버레이" loading="lazy"></div><figcaption>Lv.1 — 조류 오버레이</figcaption></figure>
+          <figure><div class="shot"><img src="assets/images/ship-01.jpg" alt="INS 콘솔 장비 랙" loading="lazy"></div><figcaption>INS 콘솔 장비 랙</figcaption></figure>
+          <figure><div class="shot"><img src="assets/images/ship-04.jpg" alt="스마트포털 화면 설치" loading="lazy"></div><figcaption>스마트포털 화면 설치</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tint" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>기술</h2>
+          <p></p>
+        </div>
+        <div class="skills" id="skills-list"></div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="experience">
+      <div class="section-head">
+        <h2>경력 · 학력</h2>
+        <p></p>
+      </div>
+      <ul class="timeline" id="exp-list"></ul>
+      <div class="cred">
+        <div><h3>교육 · 자격 · 어학</h3><ul id="cert-list"></ul></div>
+        <div><h3>학력</h3><ul id="edu-list"></ul></div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="fit">
+      <div class="section-head">
+        <h2 id="fit-title">파나시아 공고와의 접점</h2>
+        <p id="fit-note"></p>
+      </div>
+      <div class="fit" id="fit-list"></div>
+    </section>
+
+    <section class="wrap section" id="closing">
+      <div class="closing">
+        <h2 id="closing-title"></h2>
+        <div id="closing-lines"></div>
+      </div>
+    </section>
+
+    <section class="wrap section contact" id="contact">
+      <div class="glass contact-panel">
+        <p class="big">연락처 <a id="contact-email" href="#"></a></p>
+        <div class="links" id="contact-links"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap site-footer">
+    <span id="footer-name"></span>
+    <span id="footer-note"></span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

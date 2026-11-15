@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>프로젝트 — 유지선</title>
+  <script>
+    (function () { try { var t = localStorage.getItem("theme"); if (t === "night" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) document.documentElement.setAttribute("data-theme", "night"); } catch (e) {} })();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a href="index.html" class="brand" id="brand"></a>
+      <nav>
+        <a href="index.html#works">프로젝트</a>
+        <a href="index.html#fit">파나시아</a>
+        <a href="index.html#contact">연락</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" title="DAY / NIGHT">DAY</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <a class="back" href="index.html#works">← 모든 프로젝트</a>
+    <div id="project"></div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span id="footer-name"></span>
+    <span id="footer-note"></span>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>
