@@ -10,7 +10,7 @@ window.PORTFOLIO = {
   settings: {
     showTodoBar: false,
     siteTitle: "유지선 — 조선·해양 SW 개발자",
-    footerNote: "HTML, CSS, JavaScript로 직접 만든 페이지입니다. 첫 화면에 흐르는 NMEA 문장과 체크섬은 브라우저에서 실시간으로 생성합니다."
+    footerNote: ""
   },
 
   profile: {
