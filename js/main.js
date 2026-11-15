@@ -33,7 +33,7 @@
   $("hero-who").innerHTML = [
     "<span><strong>" + esc(P.name) + "</strong> " + esc(P.title) + "</span>",
     "<span>" + esc(P.focus) + "</span>",
-    "<span>경력 " + esc(P.years) + " · " + esc(P.location) + "</span>"
+    "<span>" + esc(P.careerLabel || ("경력 " + P.years)) + " · " + esc(P.careerSince || "") + " · " + esc(P.location) + "</span>"
   ].join("");
 
   /* ---------- NMEA 스트림: 실제 체크섬을 계산한 문장을 생성 ---------- */
