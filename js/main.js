@@ -171,22 +171,5 @@
   $("cert-list").innerHTML = (D.certifications || []).map(c => "<li><span>" + fmt(c.name) + "</span><span>" + fmt(c.date) + "</span></li>").join("");
   $("edu-list").innerHTML = (D.education || []).map(e => "<li><span>" + fmt(e.school) + " · " + fmt(e.major) + (e.note ? " · " + fmt(e.note) : "") + "</span><span>" + fmt(e.period) + "</span></li>").join("");
 
-  /* ---------- 적합성 ---------- */
-  const F = D.jobFit;
-  if (F) {
-    $("fit-title").textContent = F.company.split(" ")[0] + " 공고와의 접점";
-    $("fit-note").textContent = F.position + " — " + (F.note || "");
-    $("fit-list").innerHTML = (F.items || []).map(it =>
-      '<div class="fit-row"><div class="req">' + esc(it.requirement) + '</div><div><div class="ev">' + esc(it.evidence) + "</div>" +
-      ((it.projects || []).filter(id => byId[id]).length ? '<div class="links">' + it.projects.filter(id => byId[id]).map(id =>
-        '<a href="project.html?id=' + encodeURIComponent(id) + '">' + esc(byId[id].title) + "</a>").join("") + "</div>" : "") + "</div></div>").join("");
-  }
-
-  /* ---------- 연락 ---------- */
-  const C = P.contact || {};
-  const emailEl = $("contact-email");
-  if (C.email && !isTodo(C.email)) { emailEl.textContent = C.email; emailEl.href = "mailto:" + C.email; }
-  else emailEl.remove();  // 아직 비어 있으면 공개 페이지에 표시하지 않음
-  $("contact-links").innerHTML = [linkOrNull("GitHub", C.github), linkOrNull("LinkedIn", C.linkedin), linkOrNull("Blog", C.blog),
-    C.phone && !isTodo(C.phone) ? '<a href="tel:' + esc(C.phone) + '">' + esc(C.phone) + "</a>" : null].filter(Boolean).join("");
+  /* 접점(jobFit)·연락처·정리 섹션은 2026-11-15 사용자 요청으로 웹에서 제거. jobFit 데이터는 경력기술서 docx 에서만 사용. */
 })();

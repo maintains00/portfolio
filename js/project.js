@@ -39,7 +39,7 @@
   const prev = projects[(idx - 1 + projects.length) % projects.length], next = projects[(idx + 1) % projects.length];
 
   root.innerHTML =
-    '<div class="p-hero"><div class="when">' + esc(p.title) + (comp ? ' · <b>공고 · ' + esc(comp.jd) + "</b>" : "") + "</div>" +
+    '<div class="p-hero"><div class="when">' + esc(p.title) + (comp ? ' · <b>공고 항목 · ' + esc(comp.jd) + "</b>" : "") + "</div>" +
     "<h1>" + esc(p.headline || p.title) + "</h1>" + '<p class="sub">' + esc(p.subtitle) + "</p>" +
     '<dl class="p-meta">' + [["기간", p.period], ["소속 · 고객", p.org], ["역할 · 기여", p.role], ["기술", (p.tags || []).join(" · ")]]
       .filter(([, v]) => v).map(([k, v]) => "<div><dt>" + esc(k) + "</dt><dd>" + esc(v) + "</dd></div>").join("") + "</dl>" +
