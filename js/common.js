@@ -56,7 +56,7 @@
   function setTitle() {
     const t = D.settings && D.settings.siteTitle;
     if (t && !isTodo(t)) document.title = t;
-    else if (D.profile && D.profile.name && !isTodo(D.profile.name)) document.title = D.profile.name + " — Portfolio";
+    else if (D.profile && D.profile.name && !isTodo(D.profile.name)) document.title = D.profile.name + " | Portfolio";
   }
 
   window.PF = { D, esc, fmt, isTodo, countTodos, setupTodoBar, linkOrNull, setTitle };
