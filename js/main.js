@@ -82,7 +82,7 @@
   const comps = D.competencies || [];
   const compById = {};
   comps.forEach(c => { compById[c.id] = c; });
-  const pill = id => byId[id] ? '<a href="project.html?id=' + encodeURIComponent(id) + '">' + esc(byId[id].title.split(" — ")[0]) + "</a>" : "";
+  const pill = id => byId[id] ? '<a href="project.html?id=' + encodeURIComponent(id) + '">' + esc(byId[id].title.split(" - ")[0]) + "</a>" : "";
   if ($("comp-list")) {
     $("comp-list").innerHTML = comps.map((c, i) =>
       '<li><div class="jd"><span>' + esc(c.jd) + "</span></div>" +
@@ -97,7 +97,7 @@
   $("works-list").innerHTML = featured.map((p, i) =>
     '<a class="card' + (i % 3 === 0 ? " wide" : "") + '" href="project.html?id=' + encodeURIComponent(p.id) + '">' +
     '<div class="media">' + (p.thumbnail ? '<img src="' + esc(p.thumbnail) + '" alt="" loading="lazy"' + (p.thumbnailFit === "contain" ? ' style="object-fit:contain;padding:6%;background:#fff"' : "") + ">" : "") +
-    '<span class="badge">' + esc(p.period.split(" · ")[0]) + "</span>" +
+    '<span class="badge">' + esc(p.period.split(" (")[0]) + "</span>" +
     '<div class="figs">' + (p.metrics || []).slice(0, 3).map(m => "<span>" + esc(m.label) + "<b>" + esc(m.value) + "</b></span>").join("") + "</div></div>" +
     '<div class="body"><div class="kicker">' + esc(p.title) + (compById[p.competency] ? " · <b>" + esc(compById[p.competency].jd) + "</b>" : "") + "</div>" +
     "<h3>" + esc(p.headline || p.title) + "</h3>" +
