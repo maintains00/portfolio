@@ -201,6 +201,8 @@ window.PORTFOLIO = {
           { src: "assets/images/ins-v2-gps.jpg", caption: "v2 (2026) GPS1 화면. 장비 목록과 포트, 주기, 문장별 생성 문자열과 상태, 필드 편집기, 자선 공통 패널, TX/RX 모니터", wide: true },
           { src: "assets/images/ins-v2-gyro.jpg", caption: "v2 GYRO1 화면. HDG, HDT, ROT, THS 문장. 자침 방위는 자선의 진방위, 편차, 자차로 계산" },
           { src: "assets/images/ins-v2-navtex.jpg", caption: "v2 NAVTEX1 화면. NRM 수신 마스크, NRX 3문장 분할, 예약 문자 ^HH 인코딩" },
+          { src: "assets/images/ins-v2-ais-run.jpg", caption: "v2 AIS2 화면, 장비 10대 동시 송신 중. 메시지 1의 필드별 값, 비트 수, 인코딩 값. 메시지 5는 VDO 2문장으로 나눠 송신" },
+          { src: "assets/images/ins-v2-ports.jpg", caption: "포트 설정. UDP 유니캐스트와 멀티캐스트, 450 체크 시 IEC 61162-450 헤더(UdPbC, TAG block) 송신, PC의 COM 포트 통신 설정" },
           { src: "assets/images/ins-v1-gps.jpg", caption: "v1 (2024) GPS 설정 화면. 값이 화면 컨트롤에 묶여 있던 구조", wide: true },
           { src: "assets/images/ins-v1-ais.jpg", caption: "v1 AIS Class A 화면. 모니터에 6bit 인코딩된 VDM 다중 문장이 보임" }
         ],
@@ -253,6 +255,7 @@ window.PORTFOLIO = {
           { src: "assets/images/cam-03.jpg", caption: "Active Alert 화면. ECDIS, RADAR, GPS 등 소스별 경보와 확인 상태" },
           { src: "assets/images/cam-02.jpg", caption: "Alert History 화면. 발생, 확인, 해제 시각" },
           { src: "assets/images/ins-07.jpg", caption: "INS 구성. 워크스테이션 5대와 센서 허브" },
+          { src: "assets/images/cam-dnv-test-2405.jpg", caption: "CAM DNV 형식승인 시험 (2024.05.30). 사내 시험실에서 DNV 심사관 입회로 진행" },
           { src: "assets/images/ship-03.jpg", caption: "태화호 교육실 ECDIS 대형 화면 설치 (2025.07)", wide: true },
           { src: "assets/images/ship-01.jpg", caption: "INS 콘솔 장비 랙" }
         ],
