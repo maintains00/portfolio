@@ -290,10 +290,10 @@ h1, h2, h3, h4, p, dl, dd, figure { margin: 0; }
 }
 
 /* ---------- v4: 공고 ↔ 한 일 목차 · 카드 kicker · 입사 후 제안 · 정리 ---------- */
-.comp { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s5); counter-reset: comp; }
+.comp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s5); counter-reset: comp; }
 .comp > li { position: relative; background: var(--tile); border: 1px solid var(--line); border-top: 2px solid var(--accent); border-radius: var(--r); padding: var(--s5); display: flex; flex-direction: column; gap: var(--s3); }
 .comp .jd { display: flex; align-items: center; gap: var(--s2); font-size: 0.8rem; color: var(--accent-ink); font-weight: 650; }
-.comp .jd::before { counter-increment: comp; content: counter(comp, decimal-leading-zero) "  공고 항목 ·"; font-family: var(--mono); font-weight: 500; color: var(--ink-3); }
+.comp .jd::before { counter-increment: comp; content: counter(comp, decimal-leading-zero); font-family: var(--mono); font-weight: 650; font-size: 1.05rem; color: var(--accent); }
 .end-space { padding-top: 0; padding-bottom: clamp(48px, 7vw, 96px); }
 .comp h3 { font-size: 1.12rem; font-weight: 720; line-height: 1.42; letter-spacing: -0.015em; text-wrap: balance; }
 .comp .bridge { color: var(--ink-2); font-size: 0.93rem; text-wrap: pretty; }

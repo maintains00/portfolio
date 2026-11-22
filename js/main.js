@@ -78,28 +78,30 @@
   renderStream();
   if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(renderStream, 45000);
 
-  /* ---------- 역량 목차: 공고 문장 ↔ 한 일 ---------- */
+  /* ---------- 주요 업무 네 가지 ---------- */
   const comps = D.competencies || [];
   const compById = {};
   comps.forEach(c => { compById[c.id] = c; });
   const pill = id => byId[id] ? '<a href="project.html?id=' + encodeURIComponent(id) + '">' + esc(byId[id].title.split(" - ")[0]) + "</a>" : "";
   if ($("comp-list")) {
     $("comp-list").innerHTML = comps.map((c, i) =>
-      '<li><div class="jd"><span>' + esc(c.jd) + "</span></div>" +
+      '<li><div class="jd"></div>' +
       "<h3>" + esc(c.title) + "</h3>" +
       '<p class="bridge">' + esc(c.bridge) + "</p>" +
       '<ul class="facts">' + (c.facts || []).map(f => "<li>" + esc(f) + "</li>").join("") + "</ul>" +
       '<div class="links">' + (c.projects || []).map(pill).join("") + "</div></li>").join("");
   }
 
-  /* ---------- 프로젝트 ---------- */
-  const featured = (D.projects || []).filter(p => p.featured !== false);
+  /* ---------- 프로젝트: PPT·경력기술서와 같은 순서 (projectOrder), 없으면 data.js 순서 ---------- */
+  const order = D.projectOrder || [];
+  const rank = id => { const k = order.indexOf(id); return k < 0 ? 999 : k; };
+  const featured = (D.projects || []).filter(p => p.featured !== false).slice().sort((a, b) => rank(a.id) - rank(b.id));
   $("works-list").innerHTML = featured.map((p, i) =>
     '<a class="card' + (i % 3 === 0 ? " wide" : "") + '" href="project.html?id=' + encodeURIComponent(p.id) + '">' +
     '<div class="media">' + (p.thumbnail ? '<img src="' + esc(p.thumbnail) + '" alt="" loading="lazy"' + (p.thumbnailFit === "contain" ? ' style="object-fit:contain;padding:6%;background:#fff"' : "") + ">" : "") +
     '<span class="badge">' + esc(p.period.split(" (")[0]) + "</span>" +
     '<div class="figs">' + (p.metrics || []).slice(0, 3).map(m => "<span>" + esc(m.label) + "<b>" + esc(m.value) + "</b></span>").join("") + "</div></div>" +
-    '<div class="body"><div class="kicker">' + esc(p.title) + (compById[p.competency] ? " · <b>" + esc(compById[p.competency].jd) + "</b>" : "") + "</div>" +
+    '<div class="body"><div class="kicker">' + esc(p.title) + "</div>" +
     "<h3>" + esc(p.headline || p.title) + "</h3>" +
     '<p class="sub">' + esc(p.subtitle) + "</p>" +
     '<div class="tags">' + (p.tags || []).map(t => "<span>" + esc(t) + "</span>").join("") + "</div>" +
