@@ -13,3 +13,4 @@ netlify.toml
 .netlifyignore
 Thumbs.db
 desktop.ini
+_backup/
